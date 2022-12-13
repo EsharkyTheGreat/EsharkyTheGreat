@@ -11,8 +11,50 @@ cat ~/.ssh/id*.pub
 ### Basic Softwares
 - git
 - vim
+- curl
 
 ### Configuring ZSH
 ```
 sudo apt-get install zsh
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+cd ~/.oh-my-zsh/custom/plugins
+git clone https://github.com/zsh-users/zsh-autosuggestions.git
+git clone https://github.com/zsh-users/zsh-syntax-highlighting.git
+cp ~/GitRepos/EsharkyTheGreat/.zshrc ~/.zshrc 
+cd ~/GitRepos
+git clone https://github.com/dracula/zsh.git
+ln -sf /home/eshakry/GitRepos/zsh/dracula.zsh-theme ~/.oh-my-zsh/themes/dracula.zsh-theme
+source ~/.zshrc
 ```
+
+### Setup Caskaydia Font
+```
+wget https://github.com/ryanoasis/nerd-fonts/releases/download/v2.2.2/CascadiaCode.zip
+```
+
+### Setup Rust
+```
+curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+```
+
+### Setup TMUX
+```
+sudo apt install tmux
+git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+```
+
+### Setup Alacritty
+```
+sudo apt-get install cmake pkg-config libfreetype6-dev libfontconfig1-dev libxcb-xfixes0-dev libxkbcommon-dev python3
+git clone https://github.com/alacritty/alacritty.git
+rustup override set stable
+rustup update stable
+cargo build --release
+sudo tic -xe alacritty,alacritty-direct extra/alacritty.info
+sudo cp target/release/alacritty /usr/local/bin # or anywhere else in $PATH
+sudo cp extra/logo/alacritty-term.svg /usr/share/pixmaps/Alacritty.svg
+sudo desktop-file-install extra/linux/Alacritty.desktop
+sudo update-desktop-database
+cp ~/GitRepos/EsharkyTheGreat/.alacritty.yml ~/
+```
+
