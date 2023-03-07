@@ -29,7 +29,12 @@ source ~/.zshrc
 
 ### Setup Caskaydia Font
 ```
+mkdir ~/.local/share/fonts
+cd ~/.local/share/fonts
 wget https://github.com/ryanoasis/nerd-fonts/releases/download/v2.2.2/CascadiaCode.zip
+unzip CascadiaCode.zip
+rm CascadiaCode.zip
+fc-cache -fv
 ```
 
 ### Setup Rust
