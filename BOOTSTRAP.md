@@ -82,12 +82,22 @@ Just Follow official Guide
 #### Images for Docker
 
 ### Setup Python
+```
+sudo apt-get install python3 python3-pip python3.10-venv
+```
 
 ### Setup Binary Exploitation Tools
 
 ### Setup NeoVim
 
 ### Setup Discord
+```
+sudo snap install discord
+```
+or manually download .deb and
+```
+sudo dpkg -i ./discord*
+```
 
 ### Setup Spotify
 
@@ -98,6 +108,12 @@ Just Follow official Guide
 ### Setup C/C++
 
 ### Setup Pentesting Tools
+```
+mkdir ~/Pentesting
+mkdir ~/Pentesting/VPNs
+sudo apt-get install openvpn
+sudo snap install xmind
+```
 ---
 # Ricing
 
