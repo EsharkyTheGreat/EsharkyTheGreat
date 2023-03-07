@@ -46,6 +46,8 @@ curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 ```
 sudo apt install tmux
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+cp ~/GitRepos/EsharkyTheGreat/.tmux.conf ~/.tmux.conf
+
 ```
 
 ### Setup Alacritty
