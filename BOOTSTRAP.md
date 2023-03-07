@@ -70,3 +70,34 @@ sudo snap install code --classic
 ```
 Get Extensions by settings sync
 
+### Setup Brave Browser
+```
+sudo snap install brave
+```
+
+### Setup Docker
+```
+Just Follow official Guide
+```
+#### Images for Docker
+
+### Setup Python
+
+### Setup Binary Exploitation Tools
+
+### Setup NeoVim
+
+### Setup Discord
+
+### Setup Spotify
+
+### Setup Node
+
+### Setup Golang
+
+### Setup C/C++
+
+### Setup Pentesting Tools
+---
+# Ricing
+
