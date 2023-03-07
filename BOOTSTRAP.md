@@ -64,4 +64,9 @@ sudo desktop-file-install extra/linux/Alacritty.desktop
 sudo update-desktop-database
 cp ~/GitRepos/EsharkyTheGreat/.alacritty.yml ~/
 ```
+### Setup VSCode
+```
+sudo snap install code --classic
+```
+Get Extensions by settings sync
 
